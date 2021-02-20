@@ -1,4 +1,4 @@
-package com.logingoogle;
+package lab312.logingoogle;
 
 import com.facebook.react.ReactActivity;
 

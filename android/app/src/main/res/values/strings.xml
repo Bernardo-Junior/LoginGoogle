@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LoginGoogle</string>
+    <string name = "server_client_id">840685815549-0i59odi7br7lput5bij72ljegreoovto.apps.googleusercontent.com</string>
 </resources>
