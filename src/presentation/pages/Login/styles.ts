@@ -6,6 +6,8 @@ import {
   statusCodes,
 } from '@react-native-community/google-signin';
 
+import { Appearance } from 'react-native'
+
 import {
   wp,
   hp
@@ -53,7 +55,7 @@ export const TxtNameUser = styled.Text`
 
 export const TxtWelcome = styled.Text`
   font-size: ${hp('6%')}px;
-  color: #FFFFFF;
+  color: ${Appearance.getColorScheme() === 'light' ? '#000000' : '#FFFFFF'};
   margin-bottom: ${hp('5%')}px;
 `;
 
@@ -69,5 +71,6 @@ export const BtnLogOut = styled.TouchableOpacity`
 
 export const TxtBtnLogOut = styled.Text`
   font-weight: bold;
+  color: #FFFFFF;
 `;
 

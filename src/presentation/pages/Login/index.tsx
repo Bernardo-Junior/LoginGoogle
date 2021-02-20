@@ -5,6 +5,8 @@ import {
   statusCodes,
 } from '@react-native-community/google-signin';
 
+import { Appearance } from 'react-native'
+
 import {  
   Container,
   Txt,
@@ -70,7 +72,14 @@ const Login: React.FC = () => {
   };
   return (
     <>
-      <Statusbar backgroundColor={'#000000'} barStyle={"light-content"} />
+      <Statusbar 
+        backgroundColor={
+          Appearance.getColorScheme() === 'light' ? '#FFFFFF' : '#000000'
+        } 
+        barStyle={
+          Appearance.getColorScheme() === 'light' ? 'dark-content' : 'light-content'
+        } 
+      />
       <Container>
         {!isSigninInProgress &&
         <>
@@ -79,6 +88,7 @@ const Login: React.FC = () => {
           size={GoogleSigninButton.Size.Wide}
           color={GoogleSigninButton.Color.Dark}
           onPress={_signIn}
+          
           disabled={isSigninInProgress} />
         </>
         }
