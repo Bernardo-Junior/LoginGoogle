@@ -48,7 +48,7 @@ export const ImgUser = styled.Image`
 export const TxtNameUser = styled.Text`
   margin-top: ${hp('5%')}px;
   text-align: center;
-  color: blue;
+  color: #000000;
   font-size: ${hp('3%')}px;
   font-weight: bold;
 `;
@@ -71,6 +71,7 @@ export const BtnLogOut = styled.TouchableOpacity`
 
 export const TxtBtnLogOut = styled.Text`
   font-weight: bold;
+  font-size: 18px;
   color: #FFFFFF;
 `;
 

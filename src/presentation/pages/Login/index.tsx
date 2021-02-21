@@ -103,7 +103,7 @@ const Login: React.FC = () => {
               <TxtNameUser>{infoUser.user?.name}</TxtNameUser>
 
               <BtnLogOut onPress={() => {signOut()}}>
-                <TxtBtnLogOut>deslogar</TxtBtnLogOut>
+                <TxtBtnLogOut>Sair</TxtBtnLogOut>
               </BtnLogOut>
             </ViewInfo>
           </>
